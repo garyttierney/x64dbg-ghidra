@@ -1,0 +1,2 @@
+#[allow(all)]
+mod bindings {}

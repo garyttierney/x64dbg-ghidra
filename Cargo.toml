@@ -1,0 +1,22 @@
+[package]
+name = "x64dbg-ghidra"
+version = "0.1.0"
+edition = "2018"
+
+[workspace]
+members = [
+    "x64dbg-bridge-sys",
+    "x64dbg-bridge"
+]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+once_cell = "1.4"
+grpc = "0.8"
+grpc-protobuf = "0.8"
+x64dbg-bridge = { path = "x64dbg-bridge" }
+
+[build-dependencies]
+protoc-rust-grpc = "0.8"

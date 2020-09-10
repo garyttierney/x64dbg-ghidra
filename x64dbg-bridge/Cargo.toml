@@ -1,0 +1,10 @@
+[package]
+name = "x64dbg-bridge"
+version = "0.1.0"
+authors = ["Gary Tierney <gary.tierney@fastmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+x64dbg-bridge-sys = { path = "../x64dbg-bridge-sys"}
